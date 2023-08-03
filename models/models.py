@@ -1,0 +1,2 @@
+from .DIRFL import DIRFL
+MODELS = {"DIRFL":DIRFL}

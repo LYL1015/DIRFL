@@ -1,0 +1,110 @@
+{
+    "name": "DIRFL",
+    "experim_name": "Experiments/DIRFL",
+    "model": "DIRFL",
+    "tags": "EXP1",
+    "train_dataset": "wv3_dataset",
+    "train_batch_size": 4,
+    "val_batch_size": 1,
+    "num_workers": 0,
+    "initialize_weights_new":false,
+
+    "model_setting":{
+        "embed_dim1":16,
+        "embed_dim2":16,
+        "depths1" :[2, 3, 3, 2],
+        "depths2" :[2, 3, 3, 2]
+    },
+
+    "optimizer": {
+        "type": "ADAMW",
+        "args":{
+            "lr": 6e-4,
+            "weight_decay":0,
+            "momentum": 0.999
+        },
+        "sheduler":"StepLR",
+        "sheduler_set":{
+            "step_size": 150,
+            "gamma": 0.5
+        }
+    },
+
+    "trainer": {
+        "total_epochs": 500,
+        "test_freq": 1
+    },
+
+    "loss":{
+        "criterion": "L1",
+        "Normalized_L1": false,
+
+        "SAMLoss":false,
+        "SAMLoss_F":0.1,
+
+
+        "frequency_loss":false,
+        "frequency_loss_F":0.1,
+
+        "fusion_loss_pan":false,
+        "feature_sum": false
+    },
+
+    "wv3_dataset": {
+        "data_dir": {"train_dir":{"data_dir_ms":"./Data/WV3_data/train128/ms" ,
+                                "data_dir_pan":"./Data/WV3_data/train128/pan" },
+                     "val_dir":{"data_dir_ms":"./Data/WV3_data/test128/ms" ,
+                                 "data_dir_pan":"./Data/WV3_data/test128/pan"  }
+                    },
+        "spectral_bands": 4,
+        "LR_size": 32,
+        "HR_size": 128,
+        "data_augmentation": false,
+        "max_value": 255.0,
+        "factor": 4,
+        "patch_size" : 32,
+        "normalize" : false,
+        "R": 0,
+        "G": 1,
+        "B": 2
+     
+    },
+    "GF2_dataset": {
+        "data_dir": {"train_dir":{"data_dir_ms":"./Data/GF2_data/train128/ms" ,
+                                "data_dir_pan":"./Data/GF2_data/train128/pan" },
+                     "val_dir":{"data_dir_ms":"./Data/GF2_data/test128/ms" ,
+                                 "data_dir_pan":"./Data/GF2_data/test128/pan"  }
+                    },
+        "spectral_bands": 4,
+        "LR_size": 32,
+        "HR_size": 128,
+        "data_augmentation": false,
+        "max_value": 255.0,
+        "factor": 4,
+        "patch_size" : 32,
+        "normalize" : false,
+        "R": 0,
+        "G": 1,
+        "B": 2
+     
+    },
+    "wv2_dataset": {
+        "data_dir": {"train_dir":{"data_dir_ms":"./Data/WV2_data/train128/ms" ,
+                                "data_dir_pan":"./Data/WV2_data/train128/pan" },
+                     "val_dir":{"data_dir_ms":"./Data/WV2_data/test128/ms" ,
+                                 "data_dir_pan":"./Data/WV2_data/test128/pan"  }
+                    },
+        "spectral_bands": 4,
+        "LR_size": 32,
+        "HR_size": 128,
+        "data_augmentation": false,
+        "max_value": 255.0,
+        "factor": 4,
+        "patch_size" : 32,
+        "normalize" : false,
+        "R": 0,
+        "G": 1,
+        "B": 2
+     
+    }
+}
