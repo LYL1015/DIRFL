@@ -130,18 +130,16 @@ class DIRFL(nn.Module):
         channels = config1[config1["train_dataset"]]["spectral_bands"]
         depths1 = config1["model_setting"]['depths1']
         depths2 =  config1["model_setting"]['depths2']
-        self.high_fre_process =HFeatureProcess(in_channal=channels,out_channal=channels,dim = embed_dim1,depths=depths1)
-        self.spatial_process = SFeatureProcess(in_channal=channels,out_channal=channels,dim = embed_dim2,depths=depths2)
+        self.STP =HFeatureProcess(in_channal=channels,out_channal=channels,dim = embed_dim1,depths=depths1)
+        self.SPP = SFeatureProcess(in_channal=channels,out_channal=channels,dim = embed_dim2,depths=depths2)
         self.refine =  Refine(2*channels,channels)
-        # self.high_fre_process =HFeatureProcess(in_channal=channels,out_channal=channels,hornet_dim = embed_dim,hornet_depths=hornet_depths1)
 
-        # self.spatial_process = SFeatureProcess(in_channal=channels,out_channal=channels,hornet_dim = embed_dim,hornet_depths=hornet_depths2)
 
     def forward(self, lms, pan):
         _, _, M, N = pan.shape
         mHR = upsample(lms, M, N)
-        h_fused = self.high_fre_process(mHR,pan)
-        ms_amp,ms_fused = self.spatial_process(mHR,pan)
+        h_fused = self.STP(mHR,pan)
+        ms_amp,ms_fused = self.SPP(mHR,pan)
         
         fused_uni = self.refine(torch.cat([h_fused,ms_fused],1))
         fused_uni_fft = torch.fft.rfft2(fused_uni+1e-8, norm='backward')
