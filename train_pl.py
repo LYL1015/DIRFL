@@ -261,7 +261,6 @@ def main():
     global args
     args = parser.parse_args()
     # set resmue
-    # args.resume ='/home/keli403/LYL/Hypertransformer_PanNet/Experiments/pannet_pha/wv3_dataset_zhouman_hp/N_modules(3)/best_model-epoch:264-psnr:28.4827-ergas:0.9004-sam:5.3215.ckpt'
     global config
     config = json.load(open(args.config))
     
