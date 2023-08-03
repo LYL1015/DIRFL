@@ -61,24 +61,17 @@ def evaluate_metric(cfg1):
         path_ms_file = os.path.join(path_ms, file_name_i)
         path_pan_file = os.path.join(path_pan, file_name_i)
         path_predict_file = os.path.join(path_predict, file_name_i)
-        # print(path_ms_file,path_pan_file)
 
         original_msi = np.array(Image.open(path_ms_file))
         original_pan = np.array(Image.open(path_pan_file))
         fused_image = np.array(Image.open(path_predict_file))
         gt = np.uint8(original_msi)
-        # max_patch, min_patch = np.max(original_pan, axis=(0,1)), np.min(original_pan, axis=(0,1))
-        #fused_image = np.uint8(fused_image)
+
         if datatype == 'fullGF2':
             used_ms = original_msi
         else:
             used_ms = cv2.resize(original_msi, (original_msi.shape[1]//scale, original_msi.shape[0]//scale), cv2.INTER_CUBIC)
         used_pan = np.expand_dims(original_pan, -1)
-
-        #print(used_ms)
-
-
-        #print('ms shape: ', used_ms.shape, 'pan shape: ', used_pan.shape)
 
         '''setting save parameters'''
 
