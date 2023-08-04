@@ -13,6 +13,10 @@ This is the official PyTorch codes for the paper.
 ## Dependencies and Installation
 - Ubuntu >= 18.04
 - CUDA >= 11.0
+- NumPy
+- Matplotlib
+- OpenCV
+- PyYAML
 ```
 # git clone this repository
 git clone https://github.com/LYL1015/DIRFL.git
@@ -21,9 +25,6 @@ cd DIRFL
 # create new anaconda env
 conda create -n DIRFL python=3.8
 conda activate DIRFL
-
-# install python dependencies
-pip install -r requirements.txt
 ```
 ## Datasets
 Training dataset, testing dataset are available at [Data](https://github.com/manman1995/Awaresome-pansharpening).
