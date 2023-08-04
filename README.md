@@ -15,8 +15,8 @@ This is the official PyTorch codes for the paper.
 - CUDA >= 11.0
 ```
 # git clone this repository
-git clone https://github.com/RQ-Wu/RIDCP.git
-cd RIDCP
+git clone https://github.com/LYL1015/DIRFL.git
+cd DIRFL
 
 # create new anaconda env
 conda create -n DIRFL python=3.8
