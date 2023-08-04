@@ -86,3 +86,11 @@ The configuration options are stored in the `option.yaml` file and `test.py`. He
 - `n_colors`: The number of color channels.
 - `rgb_range`: The range of the RGB values.
 - `normalize`: Whether to normalize the data.
+
+## Acknowledgements
+
+Our work is based on the following projects:
+- [Awaresome-pansharpening](https://github.com/manman1995/Awaresome-pansharpening/tree/main)
+
+
+
