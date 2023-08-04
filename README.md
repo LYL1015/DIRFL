@@ -13,4 +13,15 @@ This is the official PyTorch codes for the paper.
 ## Dependencies and Installation
 - Ubuntu >= 18.04
 - CUDA >= 11.0
-- Other required packages in `requirements.txt`
+```
+# git clone this repository
+git clone https://github.com/RQ-Wu/RIDCP.git
+cd RIDCP
+
+# create new anaconda env
+conda create -n DIRFL python=3.8
+conda activate DIRFL
+
+# install python dependencies
+pip install -r requirements.txt
+```
