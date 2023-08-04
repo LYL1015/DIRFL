@@ -25,6 +25,8 @@ cd DIRFL
 # create new anaconda env
 conda create -n DIRFL python=3.8
 conda activate DIRFL
+
+pip install torch numpy matplotlib opencv-python pyyaml
 ```
 ## Datasets
 Training dataset, testing dataset are available at [Data](https://github.com/manman1995/Awaresome-pansharpening).
