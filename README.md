@@ -6,7 +6,7 @@ This is the official PyTorch codes for the paper.
 >**Domain-irrelevant Feature Learning for Generalizable Pan-sharpening**<br>  [Yunlong Lin<sup>*</sup>](https://scholar.google.com.hk/citations?user=5F3tICwAAAAJ&hl=zh-CN), [Zhenqi fu<sup>*</sup>](https://zhenqifu.github.io/index.html), [Ge Meng](), [Yingying Wang](), [Yuhang Dong](https://li-chongyi.github.io/), [Linyu Fan](),  [Hedeng Yu](), [Xinghao Ding†](https://scholar.google.com.hk/citations?user=k5hVBfMAAAAJ&hl=zh-CN&oi=ao)（ * co-first author. † indicates corresponding author)<br>
 
 <div align=center><img src="img/overview.jpg" height = "100%" width = "100%"/></div>
-
+> 
 ### :rocket: Highlights:
 - **SOTA performance**: The proposed DIRFL achieves better generalization performance than existing SOTA pan-sharpening methods over multiple satellite datasets.
 
@@ -81,7 +81,7 @@ The configuration options are stored in the `option.yaml` file and `test.py`. He
 - `save_dir`: The location to save the test results.
 - `test_config_path` : The configuration file path for models
   
-#### Data Processingc
+#### Data Processing
 
 - `upscale`: The upscale factor.
 - `batch_size`: The size of each batch.
@@ -95,6 +95,7 @@ The configuration options are stored in the `option.yaml` file and `test.py`. He
 
 Our work is based on the following projects:
 - [Awaresome-pansharpening](https://github.com/manman1995/Awaresome-pansharpening/tree/main)
+
 
 
 
