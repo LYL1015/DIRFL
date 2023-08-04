@@ -33,7 +33,9 @@ Data
     |- WV3_data
         |- train128
             |- pan
+                |- xxx.tif
             |- ms
+                |- xxx.tif
         |- test128
             |- pan
             |- ms
@@ -45,12 +47,7 @@ Data
             |- pan
             |- ms
     |-  GF2_data
-        |- train128
-            |- pan
-            |- ms
-        |- test128
-            |- pan
-            |- ms
+        |- ...
 ```
 
 ## Testing the Model
