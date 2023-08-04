@@ -26,7 +26,7 @@ conda activate DIRFL
 pip install -r requirements.txt
 ```
 ## Datasets
-Training dataset, testing dataset are available at [Data](https://github.com/manman1995/Awaresome-pansharpening)https://github.com/manman1995/Awaresome-pansharpening).
+Training dataset, testing dataset are available at [Data](https://github.com/manman1995/Awaresome-pansharpening).
 
 ### Configuration
 
