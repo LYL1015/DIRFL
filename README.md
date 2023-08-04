@@ -25,3 +25,33 @@ conda activate DIRFL
 # install python dependencies
 pip install -r requirements.txt
 ```
+## Datasets
+Training dataset, testing dataset are available at (https://drive.google.com/file/d/1gM3QeNDOCzx0m1gpOoQD1TnGv1BELy08/view?usp=sharing](https://github.com/manman1995/Awaresome-pansharpening)https://github.com/manman1995/Awaresome-pansharpening).
+
+### Configuration
+
+The configuration options are stored in the `option.yaml` file. Here is an explanation of each of the options:
+
+#### algorithm
+
+- algorithm: The model for testing
+
+#### Testing
+
+- `algorithm`: The algorithm to use for testing.
+- `type`: The type of testing, `test`
+- `data_dir`: The location of the test data.
+- `source_ms`: The source of the multi-spectral data.
+- `source_pan`: The source of the panchromatic data.
+- `model`:  The model to use for testing.
+- `save_dir`: The location to save the test results.
+
+#### Data Processing
+
+- `upscale`: The upscale factor.
+- `batch_size`: The size of each batch.
+- `patch_size`: The size of each patch.
+- `data_augmentation`: Whether to use data augmentation.
+- `n_colors`: The number of color channels.
+- `rgb_range`: The range of the RGB values.
+- `normalize`: Whether to normalize the data.
