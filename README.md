@@ -30,7 +30,8 @@ pip install torch numpy matplotlib opencv-python pyyaml
 ```
 ## Datasets
 Training dataset, testing dataset are available at [Data](https://github.com/manman1995/Awaresome-pansharpening).
-3. The final directory structure will be arranged as:
+
+The directory structure will be arranged as:
 ```
 Data
     |- WV3_data
