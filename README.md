@@ -28,6 +28,14 @@ pip install -r requirements.txt
 ## Datasets
 Training dataset, testing dataset are available at [Data](https://github.com/manman1995/Awaresome-pansharpening).
 
+## Testing the Model
+
+To test the trained pan-sharpening model, you can run the following command:
+
+```
+python test.py
+```
+
 ## Configuration
 
 The configuration options are stored in the `option.yaml` file and `test.py`. Here is an explanation of each of the options:
