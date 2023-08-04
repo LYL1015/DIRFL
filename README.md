@@ -27,6 +27,31 @@ pip install -r requirements.txt
 ```
 ## Datasets
 Training dataset, testing dataset are available at [Data](https://github.com/manman1995/Awaresome-pansharpening).
+3. The final directory structure will be arranged as:
+```
+Data
+    |- WV3_data
+        |- train128
+            |- pan
+            |- ms
+        |- test128
+            |- pan
+            |- ms
+    |-  WV2_data
+        |- train128
+            |- pan
+            |- ms
+        |- test128
+            |- pan
+            |- ms
+    |-  GF2_data
+        |- train128
+            |- pan
+            |- ms
+        |- test128
+            |- pan
+            |- ms
+```
 
 ## Testing the Model
 
