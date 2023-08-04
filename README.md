@@ -28,9 +28,9 @@ pip install -r requirements.txt
 ## Datasets
 Training dataset, testing dataset are available at [Data](https://github.com/manman1995/Awaresome-pansharpening).
 
-### Configuration
+## Configuration
 
-The configuration options are stored in the `option.yaml` file. Here is an explanation of each of the options:
+The configuration options are stored in the `option.yaml` file and `test.py`. Here is an explanation of each of the options:
 
 #### algorithm
 
@@ -43,10 +43,11 @@ The configuration options are stored in the `option.yaml` file. Here is an expla
 - `data_dir`: The location of the test data.
 - `source_ms`: The source of the multi-spectral data.
 - `source_pan`: The source of the panchromatic data.
-- `model`:  The model to use for testing.
+- `model`:  The model path to use for testing.
 - `save_dir`: The location to save the test results.
-
-#### Data Processing
+- `test_config_path` : The configuration file path for models
+  
+#### Data Processingc
 
 - `upscale`: The upscale factor.
 - `batch_size`: The size of each batch.
