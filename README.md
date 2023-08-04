@@ -3,7 +3,7 @@
 ![Python 3.8](https://img.shields.io/badge/python-3.8-g) ![pytorch 1.12.0](https://img.shields.io/badge/pytorch-1.12.0-blue.svg)
 
 This is the official PyTorch codes for the paper.  
->**Domain-irrelevant Feature Learning for Generalizable Pan-sharpening**<br>  [Yunlong Lin<sup>*</sup>](https://scholar.google.com.hk/citations?user=5F3tICwAAAAJ&hl=zh-CN), [Zhenqi fu<sup>*</sup>](https://zhenqifu.github.io/index.html), [Ge Meng](), [Yingying Wang](), [Yuhang Dong](https://li-chongyi.github.io/), [Linyu Fan](),  [Hedeng Yu](), [Xinghao Ding†](https://scholar.google.com.hk/citations?user=k5hVBfMAAAAJ&hl=zh-CN&oi=ao)（ * indicates Both authors contributed equally to this research. † indicates corresponding author)<br>
+>**Domain-irrelevant Feature Learning for Generalizable Pan-sharpening**<br>  [Yunlong Lin<sup>*</sup>](https://scholar.google.com.hk/citations?user=5F3tICwAAAAJ&hl=zh-CN), [Zhenqi fu<sup>*</sup>](https://zhenqifu.github.io/index.html), [Ge Meng](), [Yingying Wang](), [Yuhang Dong](https://li-chongyi.github.io/), [Linyu Fan](),  [Hedeng Yu](), [Xinghao Ding†](https://scholar.google.com.hk/citations?user=k5hVBfMAAAAJ&hl=zh-CN&oi=ao)（ * Co-first aurthors. † indicates corresponding author)<br>
 
 <div align=center><img src="img/overview.jpg" height = "100%" width = "100%"/></div>
 
