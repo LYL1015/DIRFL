@@ -1,6 +1,6 @@
 # <p align=center> :fire: `Domain-irrelevant Feature Learning for Generalizable Pan-sharpening (ACMMMM 2023)`</p>
 
-![Python 3.8](https://img.shields.io/badge/python-3.8-g) ![pytorch 1.12.0](https://img.shields.io/badge/pytorch-1.12.0-blue.svg) [![paper](https://img.shields.io/badge/arXiv-Paper-brightgreen)](https://zhenqifu.github.io/personal_page/23_MM1.pdf)
+![Python 3.8](https://img.shields.io/badge/python-3.8-g) ![pytorch 1.12.0](https://img.shields.io/badge/pytorch-1.12.0-blue.svg) [![paper](https://img.shields.io/badge/github-Paper-brightgreen)](https://zhenqifu.github.io/personal_page/23_MM1.pdf)
 
 This is the official PyTorch codes for the paper.  
 >**Domain-irrelevant Feature Learning for Generalizable Pan-sharpening**<br>  [Yunlong Lin<sup>*</sup>](https://scholar.google.com.hk/citations?user=5F3tICwAAAAJ&hl=zh-CN), [Zhenqi fu<sup>*</sup>](https://zhenqifu.github.io/index.html), [Ge Meng](), [Yingying Wang](), [Yuhang Dong](), [Linyu Fan](),  [Hedeng Yu](), [Xinghao Ding†](https://scholar.google.com.hk/citations?user=k5hVBfMAAAAJ&hl=zh-CN&oi=ao)（ * co-first author. † indicates corresponding author)<br>
