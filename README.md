@@ -97,5 +97,17 @@ Our work is based on the following projects:
 - [Awaresome-pansharpening](https://github.com/manman1995/Awaresome-pansharpening/tree/main)
 
 
+## Citation
 
+If you find PUIE-Net is useful in your research, please cite our paper:
+
+```
+@inproceedings{lin2023domain,
+  title={Domain-irrelevant Feature Learning for Generalizable Pan-sharpening},
+  author={Lin, Yunlong and Fu, Zhenqi and Meng, Ge and Wang, Yingying and Dong, Yuhang and Fan, Linyu and Yu, Hedeng and Ding, Xinghao},
+  booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
+  pages={3287--3296},
+  year={2023}
+}
+```
 
