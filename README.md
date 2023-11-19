@@ -99,7 +99,7 @@ Our work is based on the following projects:
 
 ## Citation
 
-If you find PUIE-Net is useful in your research, please cite our paper:
+If you find DIRFL is useful in your research, please cite our paper:
 
 ```
 @inproceedings{lin2023domain,
