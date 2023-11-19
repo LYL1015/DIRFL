@@ -7,6 +7,13 @@ This is the official PyTorch codes for the paper.
 
 <div align=center><img src="img/overview.jpg" height = "100%" width = "100%"/></div>
 
+## Abstract
+> *Pan-sharpening aims to spatially enhance the low-resolution multispectral image (LRMS) by transferring high-frequency details from a panchromatic image (PAN) while preserving the spectral
+characteristics of LRMS. Previous arts mainly focus on how to learn a high-resolution multispectral image (HRMS) on the i.i.d. assumption. However, the distribution of training and testing data
+often encounters significant shifts in different satellites. To this end, this paper proposes a generalizable pan-sharpening network via domain-irrelevant feature learning. On the one hand, a structural
+preservation module (STP) is designed to fuse high-frequency information of PAN and LRMS. Our STP is performed on the gradient domain because it consists of structure and texture details that can
+generalize well on different satellites. On the other hand, to avoid spectral distortion while promoting the generalization ability, a spectral preservation module (SPP) is developed. The key design
+of SPP is to learn a phase fusion network of PAN and LRMS. The amplitude of LRMS, which contains ‘satellite style’ information is directly injected in different fusion stages. Extensive experiments have demonstrated the effectiveness of our method against state-ofthe-art methods in both single-satellite and cross-satellite scenarios.
 ### :rocket: Highlights:
 - **SOTA performance**: The proposed DIRFL achieves better generalization performance than existing SOTA pan-sharpening methods over multiple satellite datasets.
 
